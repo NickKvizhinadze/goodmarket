@@ -3,12 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_SolutionItems", "_SolutionItems", "{F707D420-2896-4071-88EB-6C31040AEB8F}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
-		docker-compose.yml = docker-compose.yml
-		grafana-datasources.yml = grafana-datasources.yml
-		otel-collector-config.yml = otel-collector-config.yml
-		prometheus.yml = prometheus.yml
 		README.md = README.md
 		Create-Microservice.ps1 = Create-Microservice.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{C8D9E0F1-A2B3-4C5D-6E7F-8A9B0C1D2E3F}"
+	ProjectSection(SolutionItems) = preProject
+		docs\decisions.md = docs\decisions.md
+		docs\architecture.md = docs\architecture.md
+		docs\api-gateway.md = docs\api-gateway.md
+		docs\auth.md = docs\auth.md
+		docs\client-apps.md = docs\client-apps.md
+		docs\infrastructure.md = docs\infrastructure.md
+		docs\microservices.md = docs\microservices.md
+		docs\roadmap.md = docs\roadmap.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Identity", "Identity", "{2FA89949-C014-61E3-9766-4043502A0423}"
