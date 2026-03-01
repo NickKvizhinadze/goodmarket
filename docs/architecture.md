@@ -1,6 +1,6 @@
 # System Architecture
 
-GoodMarket is an e-commerce platform built with a microservices architecture on .NET 9. Each service is independently deployable, owns its own database, and communicates via HTTP (synchronous) or RabbitMQ (asynchronous).
+GoodMarket is an e-commerce platform built with a microservices architecture on .NET 10. Each service is independently deployable, owns its own database, and communicates via HTTP (synchronous) or RabbitMQ (asynchronous).
 
 ## High-Level Diagram
 
@@ -46,7 +46,7 @@ GoodMarket is an e-commerce platform built with a microservices architecture on 
 
 | Concern | Technology |
 |---|---|
-| Runtime | .NET 9 |
+| Runtime | .NET 10 |
 | API style | Minimal APIs + API versioning |
 | Orchestration (local dev) | .NET Aspire |
 | API Gateway | YARP |

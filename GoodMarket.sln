@@ -3,6 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_SolutionItems", "_SolutionItems", "{F707D420-2896-4071-88EB-6C31040AEB8F}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		CLAUDE.md = CLAUDE.md
 		README.md = README.md
 		Create-Microservice.ps1 = Create-Microservice.ps1
 	EndProjectSection

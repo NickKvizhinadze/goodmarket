@@ -19,9 +19,9 @@ foreach ($project in $projects) {
     $folderPath = "$srcPath\$projectName"
     New-Item -ItemType Directory -Path $folderPath -Force | Out-Null
     if ($project -eq "Api") {
-        dotnet new webapi -n $projectName -o $folderPath --framework net9.0
+        dotnet new webapi -n $projectName -o $folderPath --framework net10.0
     } else {
-        dotnet new classlib -n $projectName -o $folderPath --framework net9.0
+        dotnet new classlib -n $projectName -o $folderPath --framework net10.0
         $classFile = Join-Path $folderPath "Class1.cs"
         if (Test-Path $classFile) { Remove-Item $classFile }
     }
@@ -31,7 +31,7 @@ foreach ($project in $projects) {
 $testProjectName = "GoodMarket.$MicroserviceName.Integration"
 $testFolderPath = "$testsPath\$testProjectName"
 New-Item -ItemType Directory -Path $testFolderPath -Force | Out-Null
-dotnet new xunit -n $testProjectName -o $testFolderPath --framework net9.0
+dotnet new xunit -n $testProjectName -o $testFolderPath --framework net10.0
 $testFile = Join-Path $testFolderPath "UnitTest1.cs"
 if (Test-Path $testFile) { Remove-Item $testFile }
 dotnet sln GoodMarket.sln add "$testFolderPath\$testProjectName.csproj"

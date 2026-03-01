@@ -4,7 +4,7 @@
 
 **YARP** (Yet Another Reverse Proxy) — Microsoft's reverse proxy library for .NET.
 
-Project: `GoodMarket.Gateway` (.NET 9, registered in Aspire AppHost)
+Project: `GoodMarket.Gateway` (.NET 10, registered in Aspire AppHost)
 
 ## Responsibilities
 
